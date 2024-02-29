@@ -47,6 +47,31 @@ header {
     margin-right: 24px;
 }
 
+.navigate__right-block li:hover {
+    background-color: #fff;
+}
+
+.navigate__right-block li a {
+    color: #7E7E82;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    align-self: center;
+}
+
+.navigate__right-block li a:hover {
+    color: #000;
+}
+
+.navigate__right-block li span {
+    padding-right: 10px;
+}
+
+.navigate__right-block li img {
+    vertical-align: middle;
+}
+
 .navigate__right-block li:nth-child(4)::before {
     content: url("/img/svg/divider.svg");
     align-self: center;
@@ -97,6 +122,11 @@ main {
     padding-left: 24px;
     padding-right: 24px;
     white-space: nowrap;
+}
+
+.container__link:hover {
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 .container__link a {
@@ -163,6 +193,10 @@ main {
         margin-right: 16px;
     }
 
+    .navigate__right-block li span {
+        display: none;
+    }
+
     .navigate__right-block li:nth-child(1), 
     .navigate__right-block li:nth-child(2), 
     .navigate__right-block li:nth-child(3) {
@@ -205,6 +239,10 @@ main {
     .container__navigate {
         flex-wrap: nowrap;
         overflow: overlay;
+    }
+
+    .navigate__right-block li span {
+        display: none;
     }
 
     .description-image img {
