@@ -11,21 +11,69 @@
     <header>
         <nav class="navigate">
             <ul class="navigate__left-block">
-                <li><a href=""><img src="/img/svg/burger.svg" alt="Меню"></a></li>
-                <li><a href=""><img src="/img/svg/Group.svg" alt="Логотип"></a></li>
+                <li class="navigate__item">
+                    <button class="navigate__button">
+                        <img src="/img/svg/icon-burger.svg" alt="Меню">
+                    </button>
+                </li>
+                <li class="navigate__item">
+                    <img src="/img/svg/divider.svg" alt="">
+                </li>
+                <li class="navigate__item">
+                    <img src="/img/svg/Group.svg" alt="Логотип">
+                </li>
             </ul>
             <ul class="navigate__right-block">
-                <li><a href="#"><span>Обратный звонок</span><img src="/img/svg/call.svg" alt="Обратный звонок"></a></li>
-                <li><a href="#"><span>Чат</span><img src="/img/svg/chat.svg" alt="Чат"></a></li>
-                <li><a href="#"><span>Профиль</span><img src="/img/svg/profile.svg" alt="Профиль"></a></li>
-                <li><a href="#"><span>Ремонт</span><img src="/img/svg/repair.svg" alt="Ремонт"></a></li>
-                <li><a href="#"><span>Проверить статус</span><img src="/img/svg/checkstatus.svg" alt="Проверить статус"></a></li>
+                <li class="navigate__item">
+                    <button class="navigate__button">
+                        <img src="/img/svg/icon-phone.svg" alt="Обратный звонок">
+                    </button>
+                </li>
+                <li class="navigate__item">
+                    <button class="navigate__button">
+                        <img src="/img/svg/icon-chat.svg" alt="Чат">
+                    </button>
+                </li>
+                <li class="navigate__item">
+                    <button class="navigate__button">
+                        <img src="/img/svg/icon-person.svg" alt="Профиль">
+                    </button>
+                </li>
+                <li class="navigate__item">
+                    <img src="/img/svg/divider.svg" alt="">
+                </li>
+                <li class="navigate__item">
+                    <button class="navigate__button">
+                        <img src="/img/svg/icon-repair.svg" alt="Ремонт">
+                    </button>
+                </li>
+                <li class="navigate__item">
+                    <button class="navigate__button">
+                        <img src="/img/svg/icon-checkstatus.svg" alt="Проверить статус">
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="container">
-            <h1 class="container__title">Услуги и сервисы</h1>
+            <div class="container__header">
+                <h1 class="container__title">Услуги и сервисы</h1>
+                <ul class="container__list">
+                    <li class="container__list-item navigate__item">
+                        <span>Оставить заявку</span>
+                        <button class="container__button navigate__button">
+                            <img src="/img/svg/icon-repair.svg" alt="Оставить заявку">
+                        </button>
+                    </li>
+                    <li class="container__list-item navigate__item">
+                        <span>Статус ремонта</span>
+                        <button class="container__button navigate__button">
+                            <img src="/img/svg/icon-checkstatus.svg" alt="Статус ремонта">
+                        </button>
+                    </li>
+                </ul>
+            </div>
             <ul class="container__navigate">
                 <li class="container__link container__link_active"><a href="#">Ремонтируемые бренды</a></li>
                 <li class="container__link"><a href="#">Ремонтируемые устройства</a></li>
@@ -34,8 +82,8 @@
                 <li class="container__link"><a href="#">Специальные цены</a></li>
                 <li class="container__link"><a href="#">Отзывы</a></li>
             </ul>
-            <article class="container__discription">
-                <div class="description-text">
+            <article class="container__description">
+                <div class="container__text">
                     <p>
                         Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
                         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -44,9 +92,9 @@
                         что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
                         что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                     </p>
-                    <a href="#" class="read-more">Читать далее</a>
+                    <button class="container__read-more">Читать далее</button>
                 </div>
-                <div class="description-image">
+                <div class="container__image">
                     <figure>
                         <img src="/img/company.jpg" alt="Логотип компании">
                     </figure>
