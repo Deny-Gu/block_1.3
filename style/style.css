@@ -167,6 +167,14 @@ main {
 }
 
 @media (max-width: 320px), (min-width: 320px) and (max-width: 768px) {
+    .navigate__left-block, .navigate__right-block {
+        margin-left: 16px;
+    }
+
+    .navigate__right-block {
+        margin: 0 16px;
+    }
+
     .navigate__left-block .navigate__item:nth-child(2) {
         display: none;
     }
@@ -177,6 +185,16 @@ main {
         display: none;
     }
 
+    .container__title {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .container__title:before {
+        margin-right: 16px;
+        margin-left: -16px;
+    }
+
     .container__list {
         display: none;
     }
@@ -184,6 +202,8 @@ main {
     .container__navigate {
         flex-wrap: nowrap;
         overflow: overlay;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .container__navigate::-webkit-scrollbar {
@@ -196,6 +216,7 @@ main {
 
     .container__text {
         width: 100%;
+        margin: 24px 16px;
     }
 
     .container__image {
